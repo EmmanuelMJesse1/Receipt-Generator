@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .receipt-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .receipt-header, .receipt-body, .receipt-footer {
+            margin-bottom: 20px;
+        }
+
+        .receipt-header {
+            text-align: center;
+        }
+
+        .receipt-header img {
+            max-width: 100px;
+        }
+
+        .receipt-body table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .receipt-body table th, .receipt-body table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .total {
+            font-weight: bold;
+        }
+
+        .receipt-footer {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <h2>Receipt</h2>
+            <p>Thank you for your purchase!</p>
+        </div>
+
+        <div class="receipt-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>1</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr class="total">
+                        <td colspan="2">Total</td>
+                        <td>$40.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="receipt-footer">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
